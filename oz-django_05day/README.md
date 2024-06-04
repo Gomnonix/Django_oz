@@ -1,5 +1,10 @@
-<img width="533" alt="스크린샷 2024-06-03 오후 7 01 44" src="https://github.com/Gomnonix/oz-django_05day/assets/164334686/7d127ad7-1a45-40d2-b551-410b0aeb5f15">
-<img width="1743" alt="스크린샷 2024-06-03 오후 6 59 38" src="https://github.com/Gomnonix/oz-django_05day/assets/164334686/db21951c-530e-4845-be21-28ee19c13109">
-<img width="1742" alt="스크린샷 2024-06-03 오후 7 07 46" src="https://github.com/Gomnonix/oz-django_05day/assets/164334686/9f4b6481-3bf2-43c1-8fa8-8405f1ad1719">
-<img width="1747" alt="스크린샷 2024-06-03 오후 7 01 19" src="https://github.com/Gomnonix/oz-django_05day/assets/164334686/11a26507-e47c-4dde-9c28-f449844642cb">
 
+
+<img width="533" alt="스크린샷 2024-06-03 오후 7 01 44" src="https://github.com/Gomnonix/Django_oz/assets/164334686/d4c7bed9-4534-4666-9b14-15bfbf7ccb4d">
+
+<img width="1743" alt="스크린샷 2024-06-03 오후 6 59 38" src="https://github.com/Gomnonix/Django_oz/assets/164334686/d8b15dbd-1757-49ed-bc14-ffb536c67dc2">
+
+<img width="1747" alt="스크린샷 2024-06-03 오후 7 01 19" src="https://github.com/Gomnonix/Django_oz/assets/164334686/b7a5efc4-77fe-4f53-8b21-3d6f38fe671a">
+
+
+<img width="1742" alt="스크린샷 2024-06-03 오후 7 07 46" src="https://github.com/Gomnonix/Django_oz/assets/164334686/7b20666b-b536-4b56-ae26-03fd5411978b">
