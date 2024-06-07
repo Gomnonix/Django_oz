@@ -16,12 +16,24 @@ class AddressList(APIView):
     def get_object(self, user_id):
         return get_object_or_404(Address, user_id=user_id)
     
-    def post(self, request, user_id):
+    # def post(self, request, user_id): 
+    #     serializer = AddressSerializer(data=request.data)
+    #     if serializer.is_valid():
+    #         serializer.save(user_id=user_id)
+    #         return Response(serializer.data, status=status.HTTP_201_CREATED)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_ERROR)
+    # URL에서 user_id를 가져와서 사용한다.
+    
+    def post(self, request):
+        user_id = request.data.get('user_id')
+        if not user_id:
+            return Response({'error': 'user_id is required'}, status=status.HTTP_400_BAD_REQUEST)
+        
         serializer = AddressSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save(user_id=user_id)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 class AddressDetail(APIView):
     def get_object(self, user_id):
@@ -51,4 +63,12 @@ class AddressDetail(APIView):
             return Response({'error': 'Address not found'}, status=status.HTTP_404_NOT_FOUND)
         address.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+# class CreateUserAddress(APIView):
+#     def post(self, request, user_id):
+#         serializer = AddressSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save(user_id=user_id)
+#             return Response(serializer.data, status=status.HTTP_201_CREATED)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_ERROR)
         
